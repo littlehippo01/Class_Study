@@ -6,153 +6,121 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber[700],
-      appBar: AppBar(
-        title: Text('영웅 Card'),
-        centerTitle: true,
-        backgroundColor: Colors.orange[800],
-        foregroundColor: Colors.white,
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          children: [
-            CircleAvatar(
-              backgroundImage: AssetImage('images/Lee.jpg'),
-              radius: 60,
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Container(
+            width: 800,
+            height: 350,
+            decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 1),
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0,0,0,50),
+                    child: Text(''),
+                  ),
+                  CircleAvatar(
+                    backgroundImage: AssetImage('images/pikachu-3.jpg'),
+                    radius: 40,
+                  ),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0,0,0,100),
+                    child: Text(''),
+                  ),
+                  Row(
+                    children: [
+                      Text('피카츄'),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(30,0,0,0),
+                        child: Text('Pikachu'),
+                      ),
+                    ],
+                  ),
+                  Container(
+                    width: 120,
+                    height: 1,
+                    decoration: BoxDecoration(
+                      border: Border(
+                        top: BorderSide(color: Colors.black, width: 1),
+                      ),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0,0,30,0),
+                        child: Text(''),
+                      ),
+                      Text('포켓 몬스터'),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0,0,40,0),
+                        child: Text(''),
+                      ),
+                      Icon(
+                        Icons.catching_pokemon
+                      ),
+                      Text('전기 타입'),
+                      Text(''),
+                    ],
+                  ),
+                  Row(
+                    children: [                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0,0,40,0),
+                        child: Text(''),
+                      ),
+                      Icon(
+                        Icons.catching_pokemon
+                      ),
+                      Text('전기 타입'),
+                    ],
+                  ),
+                  Row(
+                    children: [                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0,0,40,0),
+                        child: Text(''),
+                      ),
+                      Icon(
+                        Icons.catching_pokemon
+                      ),
+                      Text('전기 타입'),
+                    ],
+                  ),
+                  Row(
+                    children: [                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0,0,40,0),
+                        child: Text(''),
+                      ),
+                      Icon(
+                        Icons.catching_pokemon
+                      ),
+                      Text('전기 타입'),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
             ),
-            Divider(
-              color: Colors.grey,
-            ),
-            Row(
-              children: [
-                Text('성웅',
-                style: TextStyle(
-                  fontSize: 10,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                ),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Text('이순신 장군',
-                style: TextStyle(
-                  fontSize: 30,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                ),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Text('전적',
-                style: TextStyle(
-                  fontSize: 10,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                ),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Text('62전 62승',
-                style: TextStyle(
-                  fontSize: 25,
-                  color: Colors.red,
-                  fontWeight: FontWeight.bold,
-                ),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Icon(
-                  Icons.check_circle_outline
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(10,0,0,0),
-                  child: Text('옥포해전'),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Icon(
-                  Icons.check_circle_outline
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(10,0,0,0),
-                  child: Text('사천포해전'),
-                )
-              ],
-            ),
-            Row(
-              children: [
-                Icon(
-                  Icons.check_circle_outline
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(10,0,0,0),
-                  child: Text('당포해전'),
-                )
-              ],
-            ),
-            Row(
-              children: [
-                Icon(
-                  Icons.check_circle_outline
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(10,0,0,0),
-                  child: Text('한산도대첩'),
-                )
-              ],
-            ),
-            Row(
-              children: [
-                Icon(
-                  Icons.check_circle_outline
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(10,0,0,0),
-                  child: Text('부산포해전'),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Icon(
-                  Icons.check_circle_outline
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(10,0,0,0),
-                  child: Text('명량해전'),
-                )
-              ],
-            ),
-            Row(
-              children: [
-                Icon(
-                  Icons.check_circle_outline
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(10,0,0,0),
-                  child: Text('노량해전'),
-                )
-              ],
-            ),
-            CircleAvatar(
-              backgroundImage: AssetImage('images/turtle.gif'),
-              radius: 30,
-              backgroundColor: Colors.amber[700],
-            )
-          ],
+            
         ),
       ),
     );
   }
 }
+
+
