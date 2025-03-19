@@ -1,0 +1,7 @@
+# Image, button 활용한 화면 design
+
+# 저번 시간에 배운 CircleAvatar 와 오늘 배운 ElevatedButton 에서 ElevatedButton.icon 을 사용하여 화면 구성
+
+# 간격 조정은 주로 padding 을 이용 하였으며 이외에 sizedbox 로 row 혹은 column 을 감싸 padding 을 주는 방식도 가능함
+
+# image 는 올림픽 픽토그램 이미지를 이용함
