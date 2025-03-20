@@ -1,0 +1,11 @@
+1. 배경 색 바꾸기
+
+```jsx
+ex) 
+return Scaffold(
+      appBar: AppBar(
+        title: Text('Text Row'),
+        backgroundColor: Colors.lightBlue,
+
+* 'backgoundColor', 'Colors.~' 코드 사용.
+```
