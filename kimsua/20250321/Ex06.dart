@@ -38,4 +38,4 @@ while(bmi>0){
 }
 return(bodyType[count]);
 
-}
+}//calBmi
